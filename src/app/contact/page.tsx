@@ -8,34 +8,34 @@ import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ContactFaqJsonLd } from "@/components/seo/ContactFaqJsonLd";
 
 export const metadata: Metadata = {
-  title: "Contact STRUCTURA | Request a Structural Engineering Consultation",
+  title: "Contact CIRCUITA | Request an Electrical Engineering Consultation",
   description:
-    "Request a structural engineering consultation from STRUCTURA. Share your project location, building type, milestones, and drawings. STRUCTURA responds with scope, timing, and next steps for Florida and Southeast projects.",
+    "Request an electrical engineering consultation from CIRCUITA. Share your project location, scope (plan review, lighting, EV, marina, etc.), milestones, and drawings. CIRCUITA responds with scope, timing, and next steps for Florida and Southeast projects.",
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: "Contact STRUCTURA | Request a Consultation",
+    title: "Contact CIRCUITA | Request a Consultation",
     description:
-      "Start a consultation for structural plan review, constructability support, or engineering consulting. STRUCTURA serves Florida and Southeast projects.",
+      "Start a consultation for electrical plan review, lighting design, EV charging, marina electrical, or any electrical consulting scope. CIRCUITA serves Florida and Southeast projects.",
     url: "/contact",
   },
 };
 
 const contactFaqs = [
   {
-    q: "How do I request a structural engineering consultation?",
-    a: "Fill out the form on this page with your project location, building type, milestones, and what you need reviewed. STRUCTURA will respond with a suggested scope, timeline, and next steps.",
+    q: "How do I request an electrical engineering consultation?",
+    a: "Fill out the form on this page with your project location, scope (plan review, lighting, EV, marina, etc.), milestones, and what you need reviewed. CIRCUITA will respond with a suggested scope, timeline, and next steps.",
   },
   {
     q: "What information should I include in my consultation request?",
-    a: "Include: (1) project location and building type, (2) design milestones and construction dates, (3) drawings or packages you want reviewed, and (4) specific risks you want addressed early.",
+    a: "Include: (1) project location and building type, (2) which service fits (plan review, lighting, EV, marina, design support, energy code, or constructability), (3) design milestones and construction dates, (4) drawings or packages you want reviewed, and (5) specific risks you want addressed early.",
   },
   {
-    q: "How quickly does STRUCTURA respond to consultation requests?",
-    a: "STRUCTURA typically responds within one business day with a proposed scope and next steps. Turnaround for a first review pass is usually 2 to 5 business days once scope is agreed.",
+    q: "How quickly does CIRCUITA respond to consultation requests?",
+    a: "CIRCUITA typically responds within one business day with a proposed scope and next steps. Turnaround for a first review pass is usually 2 to 5 business days once scope is agreed.",
   },
   {
-    q: "Is there a minimum project size for STRUCTURA engagements?",
-    a: "No strict minimum. STRUCTURA scopes engagements to fit the project, from a quick structural checkpoint on a single detail to a full review pass on a multi-story package.",
+    q: "Is there a minimum project size for CIRCUITA engagements?",
+    a: "No strict minimum. CIRCUITA scopes engagements to fit the project, from a quick electrical checkpoint on a single feeder or fixture question to a full review pass on a multi-story package.",
   },
 ];
 
@@ -51,8 +51,8 @@ export default function ContactPage() {
       />
       <PageHeader
         variant="contact"
-        title="Request a structural engineering consultation"
-        description="Tell me about your project, what you need reviewed, and when you need comments. STRUCTURA will respond with a scope, timeline, and next steps."
+        title="Request an electrical engineering consultation"
+        description="Tell me about your project, what you need reviewed, and when you need comments. CIRCUITA will respond with a scope, timeline, and next steps."
       />
 
       <section className="bg-surface py-16 md:py-20">
@@ -64,12 +64,16 @@ export default function ContactPage() {
                   What to include in your request
                 </h2>
                 <p className="mt-4 text-base leading-relaxed text-on-surface-variant">
-                  The more context you provide, the faster STRUCTURA can propose a scope that fits your project and timeline.
+                  The more context you provide, the faster CIRCUITA can propose a scope that fits your project and timeline.
                 </p>
                 <ul className="mt-6 space-y-4 text-base leading-relaxed text-on-surface-variant">
                   <li className="flex gap-3">
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-secondary" aria-hidden />
-                    <span><strong>Project location and building type:</strong> city, county, structure type</span>
+                    <span><strong>Project location and type:</strong> city, county, building or site type</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-secondary" aria-hidden />
+                    <span><strong>Scope:</strong> plan review, lighting, EV, marina, design support, energy code, or constructability</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-secondary" aria-hidden />
@@ -81,7 +85,7 @@ export default function ContactPage() {
                   </li>
                   <li className="flex gap-3">
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-secondary" aria-hidden />
-                    <span><strong>Risks to address early:</strong> coordination gaps, connections, staging concerns</span>
+                    <span><strong>Risks to address early:</strong> service capacity, coordination gaps, long-lead gear</span>
                   </li>
                 </ul>
                 <div className="mt-10 rounded-xl bg-surface-container-low p-6 ring-1 ring-outline-variant/10">
@@ -94,27 +98,45 @@ export default function ContactPage() {
                         href="/services#plan-review"
                         className="font-bold text-primary-container underline-offset-4 hover:underline"
                       >
-                        Structural plan review
+                        Electrical plan review
                       </Link>{" "}
-                      <span className="text-on-surface-variant">, when drawings need a structural check before permit</span>
+                      <span className="text-on-surface-variant">, when drawings need an NEC check before permit</span>
                     </li>
                     <li>
                       <Link
                         href="/services#constructability"
                         className="font-bold text-primary-container underline-offset-4 hover:underline"
                       >
-                        Constructability feedback
+                        Constructability & bid risk
                       </Link>{" "}
                       <span className="text-on-surface-variant">, when you want field-ready notes before procurement</span>
                     </li>
                     <li>
                       <Link
-                        href="/services#consulting"
+                        href="/services#lighting"
                         className="font-bold text-primary-container underline-offset-4 hover:underline"
                       >
-                        Engineering consulting
+                        Lighting design & photometrics
                       </Link>{" "}
-                      <span className="text-on-surface-variant">, when you need a working session or second opinion</span>
+                      <span className="text-on-surface-variant">, when you need fixture layouts or an IES study</span>
+                    </li>
+                    <li>
+                      <Link
+                        href="/services#ev-charging"
+                        className="font-bold text-primary-container underline-offset-4 hover:underline"
+                      >
+                        EV charging infrastructure
+                      </Link>{" "}
+                      <span className="text-on-surface-variant">, when you need load analysis or NEC 625 review</span>
+                    </li>
+                    <li>
+                      <Link
+                        href="/services#marina"
+                        className="font-bold text-primary-container underline-offset-4 hover:underline"
+                      >
+                        Marina & waterfront
+                      </Link>{" "}
+                      <span className="text-on-surface-variant">, when you need shore power or NEC 555 review</span>
                     </li>
                   </ul>
                   <p className="mt-4 text-sm text-on-surface-variant">
@@ -122,7 +144,7 @@ export default function ContactPage() {
                       href="/about"
                       className="text-primary-container underline-offset-4 hover:underline"
                     >
-                      Learn how STRUCTURA works on your project
+                      Learn how CIRCUITA works on your project
                     </Link>
                   </p>
                 </div>

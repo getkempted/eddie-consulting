@@ -6,11 +6,11 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-8">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <p className="font-headline text-2xl font-black tracking-tighter">STRUCTURA</p>
+            <p className="font-headline text-2xl font-black tracking-tighter">CIRCUITA</p>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-primary-fixed-dim">
-              STRUCTURA is a structural engineering consulting practice serving architects, developers, and
-              contractors in Florida and the Southeast United States. Services include structural plan review,
-              constructability feedback, and engineering consulting.
+              CIRCUITA is an electrical engineering consulting practice serving architects, developers, and
+              contractors in Florida and the Southeast United States. Services include electrical plan review,
+              constructability & bid-risk review, lighting design, EV charging consulting, and more.
             </p>
           </div>
           <div>
@@ -47,17 +47,37 @@ export function Footer() {
             <ul className="mt-4 space-y-3 text-sm">
               <li>
                 <Link className="text-on-primary/90 transition-colors hover:text-on-primary" href="/services#plan-review">
-                  Structural plan review
+                  Electrical plan review
                 </Link>
               </li>
               <li>
                 <Link className="text-on-primary/90 transition-colors hover:text-on-primary" href="/services#constructability">
-                  Constructability feedback
+                  Constructability & bid risk
                 </Link>
               </li>
               <li>
-                <Link className="text-on-primary/90 transition-colors hover:text-on-primary" href="/services#consulting">
-                  Engineering consulting
+                <Link className="text-on-primary/90 transition-colors hover:text-on-primary" href="/services#lighting">
+                  Lighting design & photometrics
+                </Link>
+              </li>
+              <li>
+                <Link className="text-on-primary/90 transition-colors hover:text-on-primary" href="/services#ev-charging">
+                  EV charging infrastructure
+                </Link>
+              </li>
+              <li>
+                <Link className="text-on-primary/90 transition-colors hover:text-on-primary" href="/services#design-support">
+                  Electrical design support
+                </Link>
+              </li>
+              <li>
+                <Link className="text-on-primary/90 transition-colors hover:text-on-primary" href="/services#marina">
+                  Marina & waterfront electrical
+                </Link>
+              </li>
+              <li>
+                <Link className="text-on-primary/90 transition-colors hover:text-on-primary" href="/services#energy-code">
+                  Energy & code compliance
                 </Link>
               </li>
             </ul>
@@ -73,7 +93,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-outline/20 pt-8 text-xs text-primary-fixed-dim">
-          © {new Date().getFullYear()} STRUCTURA. Structural engineering consulting.
+          © {new Date().getFullYear()} CIRCUITA. Electrical engineering consulting.
         </div>
       </div>
     </footer>

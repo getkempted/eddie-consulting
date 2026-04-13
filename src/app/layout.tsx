@@ -29,23 +29,23 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "STRUCTURA | Structural Engineering Consulting & Plan Review",
-    template: "%s | STRUCTURA",
+    default: "CIRCUITA | Electrical Engineering Consulting & Plan Review",
+    template: "%s | CIRCUITA",
   },
   description: seoDefaults.defaultDescription,
   keywords: [...seoDefaults.primaryKeywords, ...seoDefaults.secondaryKeywords],
   robots: { index: true, follow: true },
   openGraph: {
-    siteName: "STRUCTURA",
-    title: "STRUCTURA | Structural Engineering Consulting & Plan Review",
+    siteName: "CIRCUITA",
+    title: "CIRCUITA | Electrical Engineering Consulting & Plan Review",
     description:
-      "Florida and Southeast structural engineering consulting: plan review, constructability, and clear written guidance for design and construction teams.",
+      "Florida and Southeast electrical engineering consulting: plan review, lighting design, EV charging, marina, and clear written guidance for design and construction clients.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "STRUCTURA | Structural Engineering Consulting",
+    title: "CIRCUITA | Electrical Engineering Consulting",
     description: seoDefaults.defaultDescription,
   },
 };

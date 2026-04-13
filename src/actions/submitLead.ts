@@ -42,7 +42,7 @@ function isRateLimited(ip: string): boolean {
 }
 
 const FAKE_SUCCESS_MESSAGE =
-  "Thanks. Your consultation request was received and STRUCTURA will follow up shortly.";
+  "Thanks. Your consultation request was received and CIRCUITA will follow up shortly.";
 
 export async function submitLead(
   _prevState: LeadFormState,

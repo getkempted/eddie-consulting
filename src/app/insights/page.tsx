@@ -7,14 +7,14 @@ import { RevealOnScroll } from "@/components/animations/RevealOnScroll";
 import { blogPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Structural Engineering Insights & Guides | STRUCTURA",
+  title: "Electrical Engineering Insights & Guides | CIRCUITA",
   description:
-    "Practical articles by STRUCTURA on structural plan review, constructability, Florida Building Code, and engineering consulting. Written for architects, developers, and contractors working on commercial and multifamily projects.",
+    "Practical articles by CIRCUITA on electrical plan review, NEC compliance, lighting design, EV charging, Florida electrical code, and constructability. Written for architects, developers, and contractors working on commercial and multifamily projects.",
   alternates: { canonical: "/insights" },
   openGraph: {
-    title: "Insights | STRUCTURA: Structural Engineering Articles & Guides",
+    title: "Insights | CIRCUITA: Electrical Engineering Articles & Guides",
     description:
-      "Plan review checklists, constructability guidance, Florida code explainers, and coordination best practices from a licensed structural engineering consultant.",
+      "NEC plan review checklists, lighting design fundamentals, EV charging guidance, Florida code explainers, and coordination best practices from a licensed electrical engineering consultant.",
     url: "/insights",
   },
 };
@@ -36,8 +36,8 @@ export default function InsightsPage() {
         ]}
       />
       <PageHeader
-        title="Structural engineering insights from STRUCTURA"
-        description="Practical articles on structural plan review, constructability, Florida Building Code, and multi-discipline coordination. Written by STRUCTURA for architects, developers, and contractors working on commercial and multifamily projects."
+        title="Electrical engineering insights from CIRCUITA"
+        description="Practical articles on NEC plan review, lighting design, EV charging, marina electrical, Florida electrical code, and multi-discipline coordination. Written by CIRCUITA for architects, developers, and contractors working on commercial and multifamily projects."
       />
 
       <section className="bg-surface py-16">

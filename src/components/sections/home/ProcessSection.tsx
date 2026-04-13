@@ -26,10 +26,10 @@ export function ProcessSection() {
         <RevealOnScroll>
           <div className="mb-16 text-center">
             <h2 className="font-headline text-3xl font-black tracking-tighter text-primary-container md:text-5xl">
-              How does STRUCTURA work?
+              How does CIRCUITA work?
             </h2>
             <p className="mt-4 text-lg text-on-surface-variant">
-              STRUCTURA follows a three-step process from kickoff to actionable comments, whether you are
+              CIRCUITA follows a three-step process from kickoff to actionable comments, whether you are
               issuing a permit set in Florida or working through a difficult transfer or reuse.
             </p>
           </div>

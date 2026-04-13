@@ -4,25 +4,25 @@ import { RevealOnScroll } from "@/components/animations/RevealOnScroll";
 
 const services = [
   {
-    title: "Plan review",
+    title: "Electrical plan review",
     description:
-      "Structural review of drawings and details with code in mind. I flag conflicts early so they do not turn into change orders downstream.",
+      "NEC-focused review of power, lighting, and one-line drawings. I flag panel, feeder, and coordination issues early so they do not turn into change orders downstream.",
     accent: "light" as const,
-    bullets: ["Load paths and load transfers", "Where disciplines clash"],
+    bullets: ["Panel schedules and load validation", "Coordination with mechanical and architectural"],
   },
   {
-    title: "Constructability feedback",
+    title: "Constructability & bid risk",
     description:
-      "Practical notes on sequencing, connections, and materials so the design works on site, not only on paper.",
+      "Practical notes on routing, gear access, long-lead equipment, and design ambiguity so contractors bid tight and build cleanly.",
     accent: "dark" as const,
-    bullets: ["Site and staging constraints", "Ways to simplify execution"],
+    bullets: ["Design gaps before construction", "Change-order and RFI exposure"],
   },
   {
-    title: "Engineering consulting",
+    title: "Lighting design & photometrics",
     description:
-      "Targeted help for adaptive reuse, difficult framing, and performance targets, timed to your milestones.",
+      "Interior and exterior lighting, IES photometric studies, and LPD compliance — scoped for new design, retrofit, and energy-code paths.",
     accent: "light" as const,
-    bullets: ["Options with tradeoffs", "Next steps you can assign"],
+    bullets: ["Fixture selection and layouts", "IES photometric output and LPD"],
   },
 ];
 
@@ -45,12 +45,12 @@ export function ServicesPreview() {
           <div className="mb-16 flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
             <div className="max-w-2xl">
               <h2 className="font-headline text-3xl font-black tracking-tighter text-primary-container md:text-5xl">
-                What structural engineering services does STRUCTURA offer?
+                What electrical engineering services does CIRCUITA offer?
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-on-surface-variant">
-                STRUCTURA offers three services: structural plan review, constructability feedback, and
-                engineering consulting. Clear written feedback tuned for code intent, coordination, and how the
-                work actually gets built.
+                Three flagships — electrical plan review, constructability & bid-risk review, and lighting
+                design — plus targeted EV, marina, design support, and energy-code consulting. Clear written
+                deliverables tuned for NEC intent, coordination, and how the work actually gets built.
               </p>
             </div>
             <Link

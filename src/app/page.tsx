@@ -14,15 +14,15 @@ import { blogPosts } from "@/lib/blog";
 export const metadata: Metadata = {
   title: {
     absolute:
-      "STRUCTURA | Structural Engineering Consulting, Plan Review & Constructability (Florida & Southeast)",
+      "CIRCUITA | Electrical Engineering Consulting, Plan Review, Lighting & EV (Florida & Southeast)",
   },
   description:
-    "STRUCTURA is a structural engineering consulting practice in Florida and the Southeast. Services include structural plan review, constructability feedback, and engineering consulting for architects, developers, and contractors.",
+    "CIRCUITA is an electrical engineering consulting practice in Florida and the Southeast. Services include electrical plan review, constructability & bid-risk review, lighting design and photometrics, EV charging infrastructure, design support, marina electrical, and energy-code consulting.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "STRUCTURA | Structural Engineering Consulting & Plan Review",
+    title: "CIRCUITA | Electrical Engineering Consulting, Plan Review & Lighting",
     description:
-      "Structural engineering consulting for architects, developers, and contractors in Florida and the Southeast: plan review, constructability, and responsive consulting with clear deliverables.",
+      "Electrical engineering consulting for architects, developers, and contractors in Florida and the Southeast: plan review, lighting design, EV charging, marina electrical, and constructability with clear deliverables.",
     url: "/",
   },
 };
@@ -30,24 +30,24 @@ export const metadata: Metadata = {
 function HomeFaq() {
   const faqs = [
     {
-      q: "When do you need a structural engineer on a construction project?",
-      a: "You need a structural engineer whenever the project involves load-bearing modifications, new construction requiring a permit, renovation of existing structures, or when the building department requires structural documentation. Early engagement prevents costly redesigns.",
+      q: "When do you need an electrical engineer on a construction project?",
+      a: "You need an electrical engineer whenever the project involves a service upgrade, significant lighting or controls work, EV charging infrastructure, marina or waterfront electrical, or any permit submission where the building department expects well-documented electrical design. Early engagement prevents costly redesigns.",
     },
     {
-      q: "What is structural plan review?",
-      a: "Structural plan review is an independent check of structural drawings and details before permit submission. It verifies load paths, code compliance, coordination with architecture and MEP, and constructability, so problems surface while changes are still inexpensive.",
+      q: "What is electrical plan review?",
+      a: "Electrical plan review is an independent check of power, lighting, and one-line drawings before permit submission. It verifies NEC compliance, panel and feeder sizing, grounding, coordination with mechanical and architectural trades, and constructability, so issues surface while changes are still inexpensive.",
     },
     {
-      q: "Does STRUCTURA serve clients in Florida and the Southeast?",
-      a: "Yes. STRUCTURA regularly supports architects, developers, and contractors on projects in Florida and the broader Southeast United States, with deliverables aligned to local building code intent and jurisdictional expectations.",
+      q: "Does CIRCUITA serve clients in Florida and the Southeast?",
+      a: "Yes. CIRCUITA regularly supports architects, developers, and contractors on projects in Florida and the broader Southeast United States, with deliverables aligned to the adopted NEC cycle, Florida Building Code Energy, and jurisdictional expectations.",
     },
     {
-      q: "What services does STRUCTURA offer?",
-      a: "STRUCTURA offers three structural engineering services: (1) Structural plan review, an independent pass on drawings before permit; (2) Constructability feedback, practical guidance on sequencing, tolerances, and details that drive cost; and (3) Engineering consulting, targeted support for complex structural conditions with written deliverables.",
+      q: "What services does CIRCUITA offer?",
+      a: "CIRCUITA offers seven electrical engineering services: (1) Electrical plan review and QA/QC; (2) Constructability and bid-risk review; (3) Lighting design and photometrics; (4) EV charging infrastructure consulting; (5) Electrical design support (non-EOR); (6) Marina and waterfront electrical consulting; (7) Energy and code compliance consulting.",
     },
     {
-      q: "How much does structural engineering consulting cost?",
-      a: "Fees vary by scope, package size, and turnaround needs. Plan reviews for a straightforward commercial project typically start in the low thousands. STRUCTURA scopes every engagement clearly up front so there are no surprises.",
+      q: "How much does electrical engineering consulting cost?",
+      a: "Fees vary by scope, package size, and turnaround needs. Plan reviews for a straightforward commercial project typically start in the low thousands. CIRCUITA scopes every engagement clearly up front so there are no surprises.",
     },
   ];
 
@@ -58,10 +58,10 @@ function HomeFaq() {
           <div className="mb-12 flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
             <div className="max-w-2xl">
               <h2 className="font-headline text-3xl font-black tracking-tighter text-primary-container md:text-4xl">
-                Frequently asked questions about structural engineering
+                Frequently asked questions about electrical engineering
               </h2>
               <p className="mt-3 text-lg text-on-surface-variant">
-                Quick answers for architects, developers, and contractors evaluating structural consulting services.
+                Quick answers for architects, developers, and contractors evaluating electrical consulting services.
               </p>
             </div>
             <Link
@@ -101,11 +101,11 @@ function FeaturedInsights() {
           <div className="mb-12 flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
             <div className="max-w-2xl">
               <h2 className="font-headline text-3xl font-black tracking-tighter text-primary-container md:text-4xl">
-                Structural engineering insights
+                Electrical engineering insights
               </h2>
               <p className="mt-3 text-lg text-on-surface-variant">
-                Practical guidance on plan review, constructability, and Florida building code, written for
-                the architects, developers, and contractors who design and build.
+                Practical guidance on NEC plan review, lighting design, EV charging, and Florida electrical
+                code, written for the architects, developers, and contractors who design and build.
               </p>
             </div>
             <Link
@@ -150,7 +150,7 @@ export default function Home() {
       <ServicesPreview />
       <ProcessSection />
       <HomeFaq />
-      <FeaturedInsights />
+      {/* <FeaturedInsights /> — hidden until blog is rewritten from structural to electrical topics */}
       <CtaBand />
     </main>
   );

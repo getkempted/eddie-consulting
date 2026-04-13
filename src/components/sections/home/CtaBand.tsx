@@ -13,7 +13,7 @@ export function CtaBand() {
             <div className="relative z-10 flex flex-col items-start justify-between gap-10 md:flex-row md:items-center">
               <div className="max-w-xl">
                 <h2 className="font-headline text-3xl font-black tracking-tighter text-primary-container md:text-4xl">
-                  Want a structural plan review on your next package?
+                  Want an electrical plan review on your next package?
                 </h2>
                 <p className="mt-4 text-lg font-medium text-on-surface-variant">
                   Share the timeline, what you are issuing, and what a useful review looks like for your team. See{" "}

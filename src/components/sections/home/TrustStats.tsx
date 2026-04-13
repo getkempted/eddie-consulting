@@ -2,7 +2,7 @@ import { Container } from "@/components/ui/Container";
 import { RevealOnScroll } from "@/components/animations/RevealOnScroll";
 
 const stats = [
-  { value: "8 years", label: "Civil engineering experience" },
+  { value: "8 years", label: "Electrical engineering experience" },
   { value: "PE", label: "Licensed professional engineer" },
   { value: "5 days", label: "Typical first-pass review" },
   { value: "Direct", label: "Principal-led engagement" },

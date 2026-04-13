@@ -60,7 +60,7 @@ export function ArticleLayout({
                 })}
               </time>
               <span>{post.readingTime} min read</span>
-              <span>By STRUCTURA</span>
+              <span>By CIRCUITA</span>
             </div>
           </div>
         </Container>
@@ -75,10 +75,10 @@ export function ArticleLayout({
               <div className="sticky top-24 space-y-8">
                 <div className="rounded-2xl bg-surface-container-low p-8 shadow-architectural ring-1 ring-outline-variant/10">
                   <h3 className="font-headline text-lg font-bold text-primary-container">
-                    Need structural engineering support?
+                    Need electrical engineering support?
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-on-surface-variant">
-                    Share your project details and STRUCTURA will follow up with a scope and next steps.
+                    Share your project details and CIRCUITA will follow up with a scope and next steps.
                   </p>
                   <div className="mt-6">
                     <Button href="/contact" variant="primary" size="sm" className="w-full justify-center">
@@ -109,7 +109,7 @@ export function ArticleLayout({
 
                 <div className="rounded-2xl bg-surface-container-low p-8 shadow-architectural ring-1 ring-outline-variant/10">
                   <h3 className="font-headline text-sm font-bold uppercase tracking-widest text-on-surface-variant">
-                    STRUCTURA services
+                    CIRCUITA services
                   </h3>
                   <ul className="mt-4 space-y-3">
                     <li>
@@ -117,7 +117,7 @@ export function ArticleLayout({
                         href="/services#plan-review"
                         className="text-sm text-primary-container underline-offset-4 hover:underline"
                       >
-                        Structural plan review
+                        Electrical plan review
                       </Link>
                     </li>
                     <li>
@@ -125,15 +125,15 @@ export function ArticleLayout({
                         href="/services#constructability"
                         className="text-sm text-primary-container underline-offset-4 hover:underline"
                       >
-                        Constructability feedback
+                        Constructability & bid risk
                       </Link>
                     </li>
                     <li>
                       <Link
-                        href="/services#consulting"
+                        href="/services#lighting"
                         className="text-sm text-primary-container underline-offset-4 hover:underline"
                       >
-                        Engineering consulting
+                        Lighting design & photometrics
                       </Link>
                     </li>
                   </ul>

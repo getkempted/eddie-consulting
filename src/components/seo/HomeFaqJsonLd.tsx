@@ -3,29 +3,29 @@ const base = siteUrl.replace(/\/$/, "");
 
 const homeFaqs = [
   {
-    question: "When do you need a structural engineer on a construction project?",
+    question: "When do you need an electrical engineer on a construction project?",
     answer:
-      "You need a structural engineer whenever the project involves load-bearing modifications, new construction requiring permit, renovation of existing structures, or when the building department requires structural documentation. Early engagement prevents costly redesigns.",
+      "You need an electrical engineer whenever the project involves a service upgrade, significant lighting or controls work, EV charging infrastructure, marina or waterfront electrical, or any permit submission where the building department expects stamped or well-documented electrical design. Early engagement prevents costly redesigns.",
   },
   {
-    question: "What is structural plan review?",
+    question: "What is electrical plan review?",
     answer:
-      "Structural plan review is an independent check of structural drawings and details before permit submission. It verifies load paths, code compliance, coordination with architecture and MEP, and constructability, so problems surface while changes are still inexpensive.",
+      "Electrical plan review is an independent check of power, lighting, and one-line drawings before permit submission. It verifies NEC compliance, panel and feeder sizing, grounding, coordination with mechanical and architectural trades, and constructability, so issues surface while changes are still inexpensive.",
   },
   {
-    question: "Does STRUCTURA serve clients in Florida and the Southeast?",
+    question: "Does CIRCUITA serve clients in Florida and the Southeast?",
     answer:
-      "Yes. STRUCTURA regularly supports architects, developers, and contractors on projects in Florida and the broader Southeast United States, with deliverables aligned to local building code intent and jurisdictional expectations.",
+      "Yes. CIRCUITA regularly supports architects, developers, and contractors on projects in Florida and the broader Southeast United States, with deliverables aligned to the adopted NEC cycle, Florida Building Code Energy, and jurisdictional expectations.",
   },
   {
-    question: "What services does STRUCTURA offer?",
+    question: "What services does CIRCUITA offer?",
     answer:
-      "STRUCTURA offers three structural engineering services: (1) Structural plan review, an independent pass on drawings before permit; (2) Constructability feedback, practical guidance on sequencing, tolerances, and details that drive cost; and (3) Engineering consulting, targeted support for complex structural conditions with written deliverables.",
+      "CIRCUITA offers seven electrical engineering services: (1) Electrical plan review and QA/QC; (2) Constructability and bid-risk review; (3) Lighting design and photometrics; (4) EV charging infrastructure consulting; (5) Electrical design support (non-EOR); (6) Marina and waterfront electrical consulting; (7) Energy and code compliance consulting.",
   },
   {
-    question: "How much does structural engineering consulting cost?",
+    question: "How much does electrical engineering consulting cost?",
     answer:
-      "Fees vary by scope, package size, and turnaround needs. Plan reviews for a straightforward commercial project typically start in the low thousands. STRUCTURA scopes every engagement clearly up front so there are no surprises.",
+      "Fees vary by scope, package size, and turnaround needs. Plan reviews for a straightforward commercial project typically start in the low thousands. CIRCUITA scopes every engagement clearly up front so there are no surprises.",
   },
 ];
 

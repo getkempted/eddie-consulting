@@ -112,7 +112,7 @@ export function ContactForm() {
           aria-invalid={Boolean(state.fieldErrors?.project_description)}
           aria-describedby={state.fieldErrors?.project_description ? "project-error" : undefined}
           className="mt-2 min-h-[140px] w-full resize-y rounded-md border-0 bg-surface-container-low px-4 py-3 text-base leading-relaxed text-on-surface shadow-inner ring-1 ring-outline-variant/15 placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-secondary"
-          placeholder="Location, building type, schedule, and what you want reviewed."
+          placeholder="Project location, scope (plan review, lighting, EV, marina, etc.), milestones, and what you want reviewed."
         />
         <FieldError id="project-error" error={state.fieldErrors?.project_description} />
       </div>

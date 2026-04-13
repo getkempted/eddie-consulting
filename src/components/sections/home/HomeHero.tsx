@@ -11,19 +11,20 @@ export function HomeHero() {
       <Container className="relative grid items-center gap-12 py-16 lg:min-h-[calc(100vh-4.5rem)] lg:grid-cols-12 lg:gap-16 lg:py-20">
         <div className="lg:col-span-7">
           <p className="font-headline text-xs font-bold uppercase tracking-[0.2em] text-secondary-container/95">
-            Structural integrity and precision
+            NEC precision and practical judgment
           </p>
           <h1 className="mt-6 font-headline text-4xl font-black leading-[0.95] tracking-tighter text-on-primary sm:text-5xl md:text-6xl lg:text-7xl">
-            Structural engineering
+            Electrical engineering
             <br />
             consulting that
             <br />
             <span className="text-secondary-container">cuts field risk</span>
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-primary-fixed-dim md:text-xl">
-            STRUCTURA provides structural plan review, constructability feedback, and engineering consulting
-            for architects, developers, and contractors in Florida and the Southeast. Fast first passes,
-            prioritized notes, and deliverables your team can forward as-is.
+            CIRCUITA provides electrical plan review, constructability and bid-risk review, lighting design,
+            EV charging consulting, and marina electrical for architects, developers, and contractors in
+            Florida and the Southeast. Fast first passes, prioritized notes, and deliverables your team can
+            forward as-is.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
             <Button
@@ -45,7 +46,7 @@ export function HomeHero() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
             <Image
               src="/images/profile2.png"
-              alt="Eddie — Structural Engineering Consultant"
+              alt="Eddie — Electrical Engineering Consultant"
               fill
               className="object-cover"
               priority
@@ -66,8 +67,8 @@ export function HomeHero() {
                 </span>
               </div>
               <p className="text-xs leading-relaxed text-primary-fixed-dim">
-                Implementing advanced structural modeling to mitigate risk across high-density
-                developments.
+                NEC-grounded reviews and lighting photometrics that land clean with plans examiners and
+                contractors alike.
               </p>
             </div>
           </div>

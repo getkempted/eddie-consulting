@@ -6,7 +6,7 @@ const heroImages: Record<Exclude<Variant, "default">, string> = {
   about:
     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80",
   services:
-    "https://lh3.googleusercontent.com/aida-public/AB6AXuBD8vJfgLvtV5zLQQ3CT5VsE9iz3C1t171Toh4fUXKEw5ZDpYbBrDYeXy-mI_r0VL3DwKkVJlvApLnXSkv3v4VMzEjHpZZCZQMy_W-UZRUJCFbS5-NGpiOq0crbTD7WhEVR6SNeZgYOr1Xf8T02bTpnxJsYWKRFeafuLAJBD48Gp6zaPqbPY4yIp6jaia4Ul7_erpOjsc3vNp12FF1KzJ0Sxv7E2vrRK_tI1xnQ_2rCfdOIFBF071RiR2yks-iDKaumTJjPCaUMbjap",
+    "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80",
   contact:
     "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=2000&q=80",
 };
@@ -42,7 +42,7 @@ export function PageHeader({
         <Container className="relative py-14 md:py-24">
           <div className="max-w-3xl border-l-4 border-primary-fixed-dim pl-6 md:pl-8">
             <p className="font-headline text-xs font-bold uppercase tracking-[0.2em] text-primary-fixed-dim">
-              STRUCTURA
+              CIRCUITA
             </p>
             <h1 className="mt-4 font-headline text-4xl font-black tracking-tighter text-on-primary md:text-5xl lg:text-[3.25rem] lg:leading-[1.05]">
               {title}
@@ -57,7 +57,7 @@ export function PageHeader({
   }
 
   if (variant === "services") {
-    // "Structural Macro" — steel detail image on the right side.
+    // "Electrical Macro" — circuit/panel detail image on the right side.
     return (
       <div className="relative overflow-hidden border-b border-outline-variant/10 bg-surface-container-low">
         <div
@@ -75,7 +75,7 @@ export function PageHeader({
         <Container className="relative py-14 md:py-20">
           <div className="max-w-2xl border-l-4 border-secondary pl-6 md:pl-8 md:max-w-xl">
             <p className="font-headline text-xs font-bold uppercase tracking-[0.2em] text-secondary">
-              STRUCTURA
+              CIRCUITA
             </p>
             <h1 className="mt-4 font-headline text-4xl font-black tracking-tighter text-primary-container md:text-5xl lg:text-[3.25rem] lg:leading-[1.05]">
               {title}
@@ -107,7 +107,7 @@ export function PageHeader({
         <Container className="relative py-14 md:py-20">
           <div className="max-w-3xl border-l-4 border-secondary pl-6 md:pl-8">
             <p className="font-headline text-xs font-bold uppercase tracking-[0.2em] text-secondary">
-              STRUCTURA
+              CIRCUITA
             </p>
             <h1 className="mt-4 font-headline text-4xl font-black tracking-tighter text-primary-container md:text-5xl lg:text-[3.25rem] lg:leading-[1.05]">
               {title}
@@ -131,7 +131,7 @@ export function PageHeader({
       <Container className="relative py-14 md:py-20">
         <div className="max-w-3xl border-l-4 border-secondary pl-6 md:pl-8">
           <p className="font-headline text-xs font-bold uppercase tracking-[0.2em] text-secondary">
-            STRUCTURA
+            CIRCUITA
           </p>
           <h1 className="mt-4 font-headline text-4xl font-black tracking-tighter text-primary-container md:text-5xl lg:text-[3.25rem] lg:leading-[1.05]">
             {title}

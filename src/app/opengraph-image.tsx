@@ -4,7 +4,7 @@ import { join } from "node:path";
 
 export const runtime = "nodejs";
 export const alt =
-  "STRUCTURA — Structural engineering consulting that cuts field risk";
+  "CIRCUITA — Electrical engineering consulting that cuts field risk";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -46,7 +46,7 @@ export default async function OpengraphImage() {
                 marginBottom: 24,
               }}
             >
-              STRUCTURA
+              CIRCUITA
             </div>
             <div
               style={{
@@ -59,7 +59,7 @@ export default async function OpengraphImage() {
                 flexDirection: "column",
               }}
             >
-              <span>Structural engineering</span>
+              <span>Electrical engineering</span>
               <span>consulting that</span>
               <span style={{ color: "#d0e1fb" }}>cuts field risk.</span>
             </div>
@@ -73,7 +73,7 @@ export default async function OpengraphImage() {
               flexDirection: "column",
             }}
           >
-            <span>Plan review · Constructability · Consulting</span>
+            <span>Plan review · Lighting · EV &amp; Marina</span>
             <span>Florida &amp; the Southeast</span>
           </div>
         </div>
@@ -89,7 +89,7 @@ export default async function OpengraphImage() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={profileSrc}
-            alt="Eddie — Structural Engineering Consultant"
+            alt="Eddie — Electrical Engineering Consultant"
             width={340}
             height={440}
             style={{

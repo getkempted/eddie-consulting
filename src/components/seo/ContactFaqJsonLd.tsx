@@ -3,24 +3,24 @@ const base = siteUrl.replace(/\/$/, "");
 
 const contactFaqs = [
   {
-    question: "How do I request a structural engineering consultation?",
+    question: "How do I request an electrical engineering consultation?",
     answer:
-      "Fill out the contact form on the STRUCTURA website with your project location, building type, milestones, and what you need reviewed. STRUCTURA will respond with a suggested scope, timeline, and next steps.",
+      "Fill out the contact form on the CIRCUITA website with your project location, scope (plan review, lighting, EV, marina, etc.), milestones, and what you need reviewed. CIRCUITA will respond with a suggested scope, timeline, and next steps.",
   },
   {
     question: "What information should I include in my consultation request?",
     answer:
-      "Include: (1) project location and building type, (2) design milestones and construction dates, (3) drawings or packages you want reviewed, and (4) specific risks you want addressed early.",
+      "Include: (1) project location and building type, (2) which service fits (plan review, lighting, EV, marina, design support, energy code, or constructability), (3) design milestones and construction dates, (4) drawings or packages you want reviewed, and (5) specific risks you want addressed early.",
   },
   {
-    question: "How quickly does STRUCTURA respond to consultation requests?",
+    question: "How quickly does CIRCUITA respond to consultation requests?",
     answer:
-      "STRUCTURA typically responds within one business day with a proposed scope and next steps. Turnaround for a first review pass is usually 2 to 5 business days once scope is agreed.",
+      "CIRCUITA typically responds within one business day with a proposed scope and next steps. Turnaround for a first review pass is usually 2 to 5 business days once scope is agreed.",
   },
   {
-    question: "Is there a minimum project size for STRUCTURA engagements?",
+    question: "Is there a minimum project size for CIRCUITA engagements?",
     answer:
-      "No strict minimum. STRUCTURA scopes engagements to fit the project, from a quick structural checkpoint on a single detail to a full review pass on a multi-story package.",
+      "No strict minimum. CIRCUITA scopes engagements to fit the project, from a quick electrical checkpoint on a single feeder or fixture question to a full review pass on a multi-story package.",
   },
 ];
 

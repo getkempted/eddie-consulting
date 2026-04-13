@@ -23,7 +23,7 @@ export function Header() {
           href="/"
           className="font-headline text-xl font-black tracking-tighter text-on-surface sm:text-2xl"
         >
-          STRUCTURA
+          CIRCUITA
         </Link>
 
         <nav className="hidden items-center gap-10 md:flex" aria-label="Main">

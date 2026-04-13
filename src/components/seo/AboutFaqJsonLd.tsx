@@ -3,29 +3,29 @@ const base = siteUrl.replace(/\/$/, "");
 
 const aboutFaqs = [
   {
-    question: "What is STRUCTURA?",
+    question: "What is CIRCUITA?",
     answer:
-      "STRUCTURA is a structural engineering consulting practice that provides plan review, constructability feedback, and engineering consulting for architects, developers, and contractors in Florida and the Southeast United States.",
+      "CIRCUITA is an electrical engineering consulting practice that provides plan review, constructability and bid-risk review, lighting design, EV charging consulting, electrical design support, marina electrical, and energy-code consulting for architects, developers, and contractors in Florida and the Southeast United States.",
   },
   {
-    question: "Who does STRUCTURA work with?",
+    question: "Who does CIRCUITA work with?",
     answer:
-      "STRUCTURA works with architects, developers, general contractors, and construction managers on commercial and multifamily projects. I collaborate alongside your engineer of record, not as a replacement.",
+      "CIRCUITA works with architects, developers, general contractors, and construction managers on commercial and multifamily projects. I collaborate alongside your electrical engineer of record, not as a replacement.",
   },
   {
-    question: "Where does STRUCTURA operate?",
+    question: "Where does CIRCUITA operate?",
     answer:
-      "STRUCTURA serves projects throughout Florida (including Miami-Dade HVHZ and Broward County) and the broader Southeast United States. Remote consulting is available nationwide.",
+      "CIRCUITA serves projects throughout Florida (including Miami-Dade, Broward, Hillsborough, and Orange counties) and the broader Southeast United States. Remote consulting is available nationwide.",
   },
   {
-    question: "What makes STRUCTURA different from other structural engineering firms?",
+    question: "What makes CIRCUITA different from other electrical engineering firms?",
     answer:
-      "STRUCTURA focuses on consulting (plan review, constructability, and targeted structural guidance) rather than full structural design. Deliverables are written clearly enough for your team to forward directly to contractors, building departments, and other consultants.",
+      "CIRCUITA focuses on consulting (plan review, constructability, lighting, EV, marina, and targeted electrical guidance) rather than full-service electrical EOR work. Deliverables are written clearly enough for your team to forward directly to contractors, building departments, and other consultants.",
   },
   {
-    question: "Does STRUCTURA produce sealed drawings?",
+    question: "Does CIRCUITA produce sealed drawings?",
     answer:
-      "No. STRUCTURA provides written recommendations, review comments, and options analysis, not sealed construction documents. If your project requires stamped drawings, I can discuss scope or refer you to a full-service structural engineering firm.",
+      "No. CIRCUITA provides written recommendations, review comments, photometric studies, and design support, not sealed construction documents. If your project requires stamped drawings, I can discuss scope or refer you to a full-service electrical engineering firm.",
   },
 ];
 
