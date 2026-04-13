@@ -150,7 +150,7 @@ export default function ServicesPage() {
           <div className="grid gap-12">
             {offerings.map((o) => (
               <RevealOnScroll key={o.title}>
-                <article id={o.id} className="scroll-mt-24 rounded-2xl bg-surface-container-lowest p-8 shadow-architectural ring-1 ring-outline-variant/10 md:p-12">
+                <article id={o.id} className="electric-card scroll-mt-24 rounded-2xl bg-surface-container-lowest p-8 shadow-architectural ring-1 ring-outline-variant/10 md:p-12">
                   <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                     <div>
                       <h2 className="font-headline text-2xl font-black tracking-tight text-primary-container md:text-3xl">

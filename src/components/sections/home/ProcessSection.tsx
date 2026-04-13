@@ -1,5 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { RevealOnScroll } from "@/components/animations/RevealOnScroll";
+import { CurrentFlow } from "@/components/animations/CurrentFlow";
 
 const steps = [
   {
@@ -34,6 +35,10 @@ export function ProcessSection() {
             </p>
           </div>
         </RevealOnScroll>
+
+        <div className="mb-12 hidden px-6 md:block">
+          <CurrentFlow color="#0d1c32" height={14} />
+        </div>
 
         <div className="grid gap-12 md:grid-cols-3">
           {steps.map((s, i) => (

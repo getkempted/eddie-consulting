@@ -47,34 +47,40 @@ export function ContactForm() {
           <label htmlFor="name" className="font-headline text-xs font-bold uppercase tracking-widest text-on-surface-variant">
             Full name
           </label>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            autoComplete="name"
-            required
-            aria-invalid={Boolean(state.fieldErrors?.name)}
-            aria-describedby={state.fieldErrors?.name ? "name-error" : undefined}
-            className="mt-2 w-full rounded-md border-0 bg-surface-container-low px-4 py-3 text-on-surface shadow-inner ring-1 ring-outline-variant/15 placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-secondary"
-            placeholder="Alex Morgan"
-          />
+          <div className="electric-field-wrap relative mt-2 overflow-hidden rounded-md">
+            <input
+              id="name"
+              name="name"
+              type="text"
+              autoComplete="name"
+              required
+              aria-invalid={Boolean(state.fieldErrors?.name)}
+              aria-describedby={state.fieldErrors?.name ? "name-error" : undefined}
+              className="electric-field w-full rounded-md border-0 bg-surface-container-low px-4 py-3 text-on-surface shadow-inner ring-1 ring-outline-variant/15 placeholder:text-on-surface-variant/60"
+              placeholder="Alex Morgan"
+            />
+            <span className="electric-field-shimmer" aria-hidden />
+          </div>
           <FieldError id="name-error" error={state.fieldErrors?.name} />
         </div>
         <div>
           <label htmlFor="email" className="font-headline text-xs font-bold uppercase tracking-widest text-on-surface-variant">
             Email
           </label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            autoComplete="email"
-            required
-            aria-invalid={Boolean(state.fieldErrors?.email)}
-            aria-describedby={state.fieldErrors?.email ? "email-error" : undefined}
-            className="mt-2 w-full rounded-md border-0 bg-surface-container-low px-4 py-3 text-on-surface shadow-inner ring-1 ring-outline-variant/15 placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-secondary"
-            placeholder="you@firm.com"
-          />
+          <div className="electric-field-wrap relative mt-2 overflow-hidden rounded-md">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autoComplete="email"
+              required
+              aria-invalid={Boolean(state.fieldErrors?.email)}
+              aria-describedby={state.fieldErrors?.email ? "email-error" : undefined}
+              className="electric-field w-full rounded-md border-0 bg-surface-container-low px-4 py-3 text-on-surface shadow-inner ring-1 ring-outline-variant/15 placeholder:text-on-surface-variant/60"
+              placeholder="you@firm.com"
+            />
+            <span className="electric-field-shimmer" aria-hidden />
+          </div>
           <FieldError id="email-error" error={state.fieldErrors?.email} />
         </div>
       </div>
@@ -83,17 +89,20 @@ export function ContactForm() {
         <label htmlFor="company" className="font-headline text-xs font-bold uppercase tracking-widest text-on-surface-variant">
           Company or firm
         </label>
-        <input
-          id="company"
-          name="company"
-          type="text"
-          autoComplete="organization"
-          required
-          aria-invalid={Boolean(state.fieldErrors?.company)}
-          aria-describedby={state.fieldErrors?.company ? "company-error" : undefined}
-          className="mt-2 w-full rounded-md border-0 bg-surface-container-low px-4 py-3 text-on-surface shadow-inner ring-1 ring-outline-variant/15 placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-secondary"
-          placeholder="Studio name or contractor"
-        />
+        <div className="electric-field-wrap relative mt-2 overflow-hidden rounded-md">
+          <input
+            id="company"
+            name="company"
+            type="text"
+            autoComplete="organization"
+            required
+            aria-invalid={Boolean(state.fieldErrors?.company)}
+            aria-describedby={state.fieldErrors?.company ? "company-error" : undefined}
+            className="electric-field w-full rounded-md border-0 bg-surface-container-low px-4 py-3 text-on-surface shadow-inner ring-1 ring-outline-variant/15 placeholder:text-on-surface-variant/60"
+            placeholder="Studio name or contractor"
+          />
+          <span className="electric-field-shimmer" aria-hidden />
+        </div>
         <FieldError id="company-error" error={state.fieldErrors?.company} />
       </div>
 
@@ -104,16 +113,19 @@ export function ContactForm() {
         >
           Project description
         </label>
-        <textarea
-          id="project_description"
-          name="project_description"
-          rows={6}
-          required
-          aria-invalid={Boolean(state.fieldErrors?.project_description)}
-          aria-describedby={state.fieldErrors?.project_description ? "project-error" : undefined}
-          className="mt-2 min-h-[140px] w-full resize-y rounded-md border-0 bg-surface-container-low px-4 py-3 text-base leading-relaxed text-on-surface shadow-inner ring-1 ring-outline-variant/15 placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-2 focus:ring-secondary"
-          placeholder="Project location, scope (plan review, lighting, EV, marina, etc.), milestones, and what you want reviewed."
-        />
+        <div className="electric-field-wrap relative mt-2 overflow-hidden rounded-md">
+          <textarea
+            id="project_description"
+            name="project_description"
+            rows={6}
+            required
+            aria-invalid={Boolean(state.fieldErrors?.project_description)}
+            aria-describedby={state.fieldErrors?.project_description ? "project-error" : undefined}
+            className="electric-field block min-h-[140px] w-full resize-y rounded-md border-0 bg-surface-container-low px-4 py-3 text-base leading-relaxed text-on-surface shadow-inner ring-1 ring-outline-variant/15 placeholder:text-on-surface-variant/60"
+            placeholder="Project location, scope (plan review, lighting, EV, marina, etc.), milestones, and what you want reviewed."
+          />
+          <span className="electric-field-shimmer" aria-hidden />
+        </div>
         <FieldError id="project-error" error={state.fieldErrors?.project_description} />
       </div>
 

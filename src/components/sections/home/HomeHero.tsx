@@ -3,14 +3,18 @@ import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { HeroBackground } from "@/components/animations/HeroBackground";
+import { CircuitTrace } from "@/components/animations/CircuitTrace";
+import { LightningBolt } from "@/components/animations/LightningBolt";
 
 export function HomeHero() {
   return (
     <section className="relative min-h-[calc(100vh-4.5rem)] overflow-hidden bg-primary-container">
       <HeroBackground />
+      <CircuitTrace opacity={0.7} />
       <Container className="relative grid items-center gap-12 py-16 lg:min-h-[calc(100vh-4.5rem)] lg:grid-cols-12 lg:gap-16 lg:py-20">
         <div className="lg:col-span-7">
-          <p className="font-headline text-xs font-bold uppercase tracking-[0.2em] text-secondary-container/95">
+          <p className="font-headline flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-secondary-container/95">
+            <LightningBolt size={14} />
             NEC precision and practical judgment
           </p>
           <h1 className="mt-6 font-headline text-4xl font-black leading-[0.95] tracking-tighter text-on-primary sm:text-5xl md:text-6xl lg:text-7xl">

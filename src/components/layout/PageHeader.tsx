@@ -1,4 +1,6 @@
 import { Container } from "@/components/ui/Container";
+import { LightningBolt } from "@/components/animations/LightningBolt";
+import { CircuitTrace } from "@/components/animations/CircuitTrace";
 
 type Variant = "default" | "about" | "services" | "contact";
 
@@ -39,9 +41,11 @@ export function PageHeader({
           }}
           aria-hidden
         />
+        <CircuitTrace opacity={0.5} />
         <Container className="relative py-14 md:py-24">
-          <div className="max-w-3xl border-l-4 border-primary-fixed-dim pl-6 md:pl-8">
-            <p className="font-headline text-xs font-bold uppercase tracking-[0.2em] text-primary-fixed-dim">
+          <div className="relative max-w-3xl border-l-4 border-primary-fixed-dim pl-6 md:pl-8">
+            <p className="font-headline flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-primary-fixed-dim">
+              <LightningBolt size={16} />
               CIRCUITA
             </p>
             <h1 className="mt-4 font-headline text-4xl font-black tracking-tighter text-on-primary md:text-5xl lg:text-[3.25rem] lg:leading-[1.05]">
@@ -58,6 +62,7 @@ export function PageHeader({
 
   if (variant === "services") {
     // "Electrical Macro" — circuit/panel detail image on the right side.
+    // The photo already carries the electrical signal, so no CircuitTrace here.
     return (
       <div className="relative overflow-hidden border-b border-outline-variant/10 bg-surface-container-low">
         <div
@@ -73,8 +78,9 @@ export function PageHeader({
           aria-hidden
         />
         <Container className="relative py-14 md:py-20">
-          <div className="max-w-2xl border-l-4 border-secondary pl-6 md:pl-8 md:max-w-xl">
-            <p className="font-headline text-xs font-bold uppercase tracking-[0.2em] text-secondary">
+          <div className="relative max-w-2xl border-l-4 border-secondary pl-6 md:pl-8 md:max-w-xl">
+            <p className="font-headline flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-secondary">
+              <LightningBolt size={16} color="#0d1c32" />
               CIRCUITA
             </p>
             <h1 className="mt-4 font-headline text-4xl font-black tracking-tighter text-primary-container md:text-5xl lg:text-[3.25rem] lg:leading-[1.05]">
@@ -90,7 +96,7 @@ export function PageHeader({
   }
 
   if (variant === "contact") {
-    // "Workbench" — drafting photo faded behind the blueprint grid.
+    // "Workbench" — drafting photo faded behind an animated circuit trace.
     return (
       <div className="relative overflow-hidden border-b border-outline-variant/10 bg-surface-container-low">
         <div
@@ -100,13 +106,11 @@ export function PageHeader({
           }}
           aria-hidden
         />
-        <div
-          className="pointer-events-none absolute inset-0 opacity-[0.35] blueprint-grid"
-          aria-hidden
-        />
+        <CircuitTrace tint="#0d1c32" opacity={0.35} />
         <Container className="relative py-14 md:py-20">
-          <div className="max-w-3xl border-l-4 border-secondary pl-6 md:pl-8">
-            <p className="font-headline text-xs font-bold uppercase tracking-[0.2em] text-secondary">
+          <div className="relative max-w-3xl border-l-4 border-secondary pl-6 md:pl-8">
+            <p className="font-headline flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-secondary">
+              <LightningBolt size={16} color="#0d1c32" />
               CIRCUITA
             </p>
             <h1 className="mt-4 font-headline text-4xl font-black tracking-tighter text-primary-container md:text-5xl lg:text-[3.25rem] lg:leading-[1.05]">
@@ -121,16 +125,14 @@ export function PageHeader({
     );
   }
 
-  // Default — existing treatment.
+  // Default — circuit backdrop on light surface.
   return (
     <div className="relative overflow-hidden border-b border-outline-variant/10 bg-surface-container-low">
-      <div
-        className="pointer-events-none absolute inset-0 opacity-[0.35] blueprint-grid"
-        aria-hidden
-      />
+      <CircuitTrace tint="#0d1c32" opacity={0.3} />
       <Container className="relative py-14 md:py-20">
-        <div className="max-w-3xl border-l-4 border-secondary pl-6 md:pl-8">
-          <p className="font-headline text-xs font-bold uppercase tracking-[0.2em] text-secondary">
+        <div className="relative max-w-3xl border-l-4 border-secondary pl-6 md:pl-8">
+          <p className="font-headline flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-secondary">
+            <LightningBolt size={16} color="#0d1c32" />
             CIRCUITA
           </p>
           <h1 className="mt-4 font-headline text-4xl font-black tracking-tighter text-primary-container md:text-5xl lg:text-[3.25rem] lg:leading-[1.05]">
