@@ -1,10 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="CIRCUITA">
   <rect width="256" height="256" rx="48" fill="#0d1c32"/>
   <g fill="#ffffff">
-    <rect x="48" y="32"  width="160" height="40"/>
-    <rect x="48" y="72"  width="40"  height="36"/>
-    <rect x="48" y="108" width="160" height="40"/>
-    <rect x="168" y="148" width="40" height="36"/>
-    <rect x="48" y="184" width="160" height="40"/>
+    <!-- C shape: top bar, left spine, bottom bar -->
+    <rect x="48" y="32"  width="144" height="40"/>
+    <rect x="48" y="72"  width="40"  height="112"/>
+    <rect x="48" y="184" width="144" height="40"/>
+    <!-- Circuit terminal nodes at the C's open end -->
+    <circle cx="196" cy="52"  r="18"/>
+    <circle cx="196" cy="204" r="18"/>
   </g>
 </svg>
