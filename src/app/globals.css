@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+/* Blueprint Precision — tonal surfaces, no harsh borders */
+:root {
+  --surface: #f7f9fb;
+  --surface-container-low: #f2f4f6;
+  --surface-container-lowest: #ffffff;
+  --surface-container-high: #e6e8ea;
+  --on-surface: #191c1e;
+  --on-surface-variant: #44474d;
+  --outline-variant: #c5c6cd;
+  --primary-container: #0d1c32;
+  --on-primary: #ffffff;
+  --secondary: #505f76;
+  --secondary-container: #d0e1fb;
+  --primary-fixed-dim: #b9c7e4;
+  --outline: #75777e;
+  --error: #ba1a1a;
+  --architectural-shadow: 0 32px 64px -12px rgb(25 28 30 / 6%);
+}
+
+@theme inline {
+  --font-headline: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+
+  --color-surface: var(--surface);
+  --color-surface-container-low: var(--surface-container-low);
+  --color-surface-container-lowest: var(--surface-container-lowest);
+  --color-surface-container-high: var(--surface-container-high);
+  --color-on-surface: var(--on-surface);
+  --color-on-surface-variant: var(--on-surface-variant);
+  --color-outline-variant: var(--outline-variant);
+  --color-primary-container: var(--primary-container);
+  --color-on-primary: var(--on-primary);
+  --color-secondary: var(--secondary);
+  --color-secondary-container: var(--secondary-container);
+  --color-primary-fixed-dim: var(--primary-fixed-dim);
+  --color-outline: var(--outline);
+  --color-error: var(--error);
+  --color-primary-fixed-dim: var(--primary-fixed-dim);
+
+  --shadow-architectural: var(--architectural-shadow);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--surface);
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* Headline rhythm — Blueprint Precision: tight display tracking */
+.font-headline {
+  letter-spacing: -0.02em;
+}
+
+h1.font-headline,
+h2.font-headline,
+h3.font-headline {
+  text-wrap: balance;
+}
+
+::selection {
+  background: var(--secondary-container);
+  color: var(--primary-container);
+}
+
+.blueprint-grid {
+  background-image: radial-gradient(circle, rgb(117 119 126 / 12%) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, var(--primary-container) 0%, var(--secondary) 100%);
+}
+
+.glass-nav {
+  background: rgb(247 249 251 / 80%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.ghost-outline {
+  outline: 1px solid rgb(197 198 205 / 15%);
+  outline-offset: 0;
+}
+
+/* Article prose styling — Blueprint Precision adapted for long-form content */
+.prose-structura {
+  color: var(--on-surface);
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+.prose-structura h2 {
+  font-family: var(--font-headline);
+  font-weight: 900;
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
+  color: var(--primary-container);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose-structura h3 {
+  font-family: var(--font-headline);
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  color: var(--primary-container);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-structura p {
+  margin-bottom: 1.25rem;
+  color: var(--on-surface-variant);
+}
+
+.prose-structura ul,
+.prose-structura ol {
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.prose-structura li {
+  margin-bottom: 0.5rem;
+  color: var(--on-surface-variant);
+}
+
+.prose-structura ol {
+  list-style-type: decimal;
+}
+
+.prose-structura ul {
+  list-style-type: disc;
+}
+
+.prose-structura strong {
+  color: var(--on-surface);
+  font-weight: 700;
+}
+
+.prose-structura a {
+  color: var(--primary-container);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.prose-structura a:hover {
+  opacity: 0.8;
+}

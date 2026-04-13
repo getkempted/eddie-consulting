@@ -1,0 +1,48 @@
+# STRUCTURA — Structural Engineering Consulting
+
+> STRUCTURA is a structural engineering consulting firm serving architects, developers, and contractors in Florida and the Southeast United States.
+
+## What STRUCTURA Does
+
+STRUCTURA provides three core services:
+
+1. **Structural Plan Review** — Independent review of structural drawings and details before permit submission. Checks load paths, code compliance, coordination with architecture and MEP, and constructability.
+
+2. **Constructability Feedback** — Practical guidance on sequencing, tolerances, connections, and details that drive schedule and cost. Identifies field problems before they become change orders.
+
+3. **Engineering Consulting** — Targeted consulting for adaptive reuse, complex transfers, unusual framing, and performance-based design. Produces written recommendations and options analysis.
+
+## Who STRUCTURA Serves
+
+- Architects designing buildings that need structural input
+- Developers managing construction risk and schedule
+- General contractors preparing for procurement and field work
+- Construction managers coordinating multi-discipline teams
+
+## Where STRUCTURA Operates
+
+- Florida (all counties, including Miami-Dade HVHZ and Broward County)
+- Southeast United States
+- Remote consulting available nationwide
+
+## Key Expertise
+
+- Florida Building Code (FBC) compliance
+- ASCE 7 wind load design
+- High Velocity Hurricane Zone (HVHZ) requirements
+- Structural peer review
+- Multi-discipline coordination (architecture, MEP, structural)
+- Post-tension concrete, steel, and concrete framing systems
+- Milestone inspections and recertification (SB 4-D)
+
+## Site Pages
+
+- [Home](/) — Overview of services and approach
+- [Services](/services) — Detailed service descriptions and comprehensive FAQ
+- [About](/about) — How STRUCTURA works with project teams
+- [Contact](/contact) — Request a consultation
+- [Insights](/insights) — Articles on plan review, constructability, Florida code, and coordination
+
+## Contact
+
+Request a consultation at [/contact](/contact) with project location, building type, milestones, and what you need reviewed.

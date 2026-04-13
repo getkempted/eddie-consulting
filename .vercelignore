@@ -1,0 +1,26 @@
+# Local testing & screenshot artifacts
+.playwright-mcp/
+playwright-output/
+/*.png
+
+# HTML mockups — reference only, not used at runtime
+mockups/
+
+# Planning & documentation (not needed at runtime)
+ARCHITECTURE.md
+PROJECT.md
+ORCHESTRATION_RULES.md
+MASTER_PROMPT.md
+CLAUDE.md
+cursor-context.md
+
+# Editor / tooling
+.vscode/
+.agents/
+.claude/
+
+# Supabase local dev config (Supabase is hosted separately)
+supabase/
+
+# Scripts not needed for runtime
+scripts/
