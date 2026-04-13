@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 192" role="img" aria-label="STRUCTURA">
+  <!-- Geometric S mark -->
+  <g fill="#0d1c32">
+    <rect x="0"   y="0"   width="160" height="40"/>
+    <rect x="0"   y="40"  width="40"  height="36"/>
+    <rect x="0"   y="76"  width="160" height="40"/>
+    <rect x="120" y="116" width="40"  height="36"/>
+    <rect x="0"   y="152" width="160" height="40"/>
+  </g>
+  <!-- Wordmark -->
+  <text
+    x="208"
+    y="136"
+    fill="#0d1c32"
+    font-family="Inter, 'Helvetica Neue', Arial, sans-serif"
+    font-weight="900"
+    font-size="140"
+    letter-spacing="-4"
+  >STRUCTURA</text>
+</svg>
