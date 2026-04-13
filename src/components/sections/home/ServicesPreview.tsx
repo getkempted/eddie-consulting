@@ -65,11 +65,11 @@ export function ServicesPreview() {
           </div>
         </RevealOnScroll>
 
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid items-stretch gap-8 md:grid-cols-3">
           {services.map((s) => (
-            <RevealOnScroll key={s.title}>
+            <RevealOnScroll key={s.title} className="h-full">
               <article
-                className={`h-full rounded-xl p-8 shadow-architectural transition-transform duration-300 hover:-translate-y-1 ${
+                className={`flex h-full flex-col rounded-xl p-8 shadow-architectural transition-transform duration-300 hover:-translate-y-1 ${
                   s.accent === "dark"
                     ? "bg-primary-container text-on-primary"
                     : "bg-surface-container-lowest ring-1 ring-outline-variant/10"
@@ -85,7 +85,7 @@ export function ServicesPreview() {
                 >
                   {s.description}
                 </p>
-                <ul className="mt-8 space-y-3">
+                <ul className="mt-auto space-y-3 pt-8">
                   {s.bullets.map((b) => (
                     <li key={b} className="flex items-start gap-3 text-sm font-medium">
                       <Check
