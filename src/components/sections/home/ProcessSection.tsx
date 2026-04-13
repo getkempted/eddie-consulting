@@ -5,7 +5,7 @@ const steps = [
   {
     n: "1",
     title: "Consultation",
-    body: "We agree on scope, schedule, deliverables, and what risks you want off the table early.",
+    body: "I agree on scope, schedule, deliverables, and what risks you want off the table early.",
   },
   {
     n: "2",

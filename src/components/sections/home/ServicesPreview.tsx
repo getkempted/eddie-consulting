@@ -6,7 +6,7 @@ const services = [
   {
     title: "Plan review",
     description:
-      "Structural review of drawings and details with code in mind. We flag conflicts early so they do not turn into change orders downstream.",
+      "Structural review of drawings and details with code in mind. I flag conflicts early so they do not turn into change orders downstream.",
     accent: "light" as const,
     bullets: ["Load paths and load transfers", "Where disciplines clash"],
   },

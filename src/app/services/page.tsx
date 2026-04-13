@@ -5,13 +5,13 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { RevealOnScroll } from "@/components/animations/RevealOnScroll";
 import { ServicesFaqJsonLd } from "@/components/seo/ServicesFaqJsonLd";
-import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { servicesFaq, getFaqByCluster } from "@/lib/services-faq";
 
 export const metadata: Metadata = {
   title: "Structural Plan Review, Constructability & Engineering Consulting Services",
   description:
-    "STRUCTURA offers three structural engineering services: (1) structural plan review before permit, (2) constructability feedback on sequencing and details, and (3) engineering consulting for complex structural conditions. We work with teams in Florida and across the Southeast.",
+    "STRUCTURA offers three structural engineering services: (1) structural plan review before permit, (2) constructability feedback on sequencing and details, and (3) engineering consulting for complex structural conditions. Serving architects, developers, and contractors in Florida and across the Southeast.",
   alternates: { canonical: "/services" },
   openGraph: {
     title: "Services | STRUCTURA: Plan Review, Constructability & Consulting",
@@ -29,7 +29,7 @@ const offerings = [
     summary:
       "A structural plan review is an independent check of structural drawings and details before permit submission. It verifies load paths, code compliance, coordination with architecture and MEP, and constructability.",
     detail:
-      "We read drawings the way contractors and inspectors do: load path gaps, vague details, and clashes with other trades. You get prioritized notes you can close out in sequence.",
+      "I read drawings the way contractors and inspectors do: load path gaps, vague details, and clashes with other trades. You get prioritized notes you can close out in sequence.",
     bullets: [
       "Gravity and lateral system coherence",
       "Connection intent vs. constructability",
@@ -73,20 +73,21 @@ export default function ServicesPage() {
   return (
     <main>
       <ServicesFaqJsonLd />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Services", href: "/services" },
+        ]}
+      />
       <PageHeader
+        variant="services"
         title="Structural plan review & consulting services"
-        description="STRUCTURA offers three structural engineering services: plan review, constructability feedback, and engineering consulting. We help architects, developers, and contractors in Florida and the Southeast reduce field risk, avoid permit delays, and build with fewer change orders."
+        description="STRUCTURA offers three structural engineering services: plan review, constructability feedback, and engineering consulting. I help architects, developers, and contractors in Florida and the Southeast reduce field risk, avoid permit delays, and build with fewer change orders."
       />
 
       <section className="bg-surface py-16">
         <Container>
-          <Breadcrumbs
-            items={[
-              { name: "Home", href: "/" },
-              { name: "Services", href: "/services" },
-            ]}
-          />
-          <div className="mt-10 grid gap-12">
+          <div className="grid gap-12">
             {offerings.map((o) => (
               <RevealOnScroll key={o.title}>
                 <article id={o.id} className="scroll-mt-24 rounded-2xl bg-surface-container-lowest p-8 shadow-architectural ring-1 ring-outline-variant/10 md:p-12">
@@ -139,7 +140,7 @@ export default function ServicesPage() {
                   href="/about"
                   className="font-headline inline-flex min-h-11 items-center px-2 text-base font-bold text-primary-container underline-offset-4 hover:underline"
                 >
-                  Learn about our approach
+                  Learn about my approach
                 </Link>
               </div>
             </div>

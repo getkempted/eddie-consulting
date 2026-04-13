@@ -8,7 +8,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <p className="font-headline text-2xl font-black tracking-tighter">STRUCTURA</p>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-primary-fixed-dim">
-              STRUCTURA is a structural engineering consulting firm serving architects, developers, and
+              STRUCTURA is a structural engineering consulting practice serving architects, developers, and
               contractors in Florida and the Southeast United States. Services include structural plan review,
               constructability feedback, and engineering consulting.
             </p>

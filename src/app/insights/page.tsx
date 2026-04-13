@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { Container } from "@/components/ui/Container";
-import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { RevealOnScroll } from "@/components/animations/RevealOnScroll";
 import { blogPosts } from "@/lib/blog";
 
@@ -29,6 +29,12 @@ const pillarLabels: Record<string, string> = {
 export default function InsightsPage() {
   return (
     <main>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Insights", href: "/insights" },
+        ]}
+      />
       <PageHeader
         title="Structural engineering insights from STRUCTURA"
         description="Practical articles on structural plan review, constructability, Florida Building Code, and multi-discipline coordination. Written by STRUCTURA for architects, developers, and contractors working on commercial and multifamily projects."
@@ -36,14 +42,7 @@ export default function InsightsPage() {
 
       <section className="bg-surface py-16">
         <Container>
-          <Breadcrumbs
-            items={[
-              { name: "Home", href: "/" },
-              { name: "Insights", href: "/insights" },
-            ]}
-          />
-
-          <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {blogPosts.map((post) => (
               <RevealOnScroll key={post.slug}>
                 <article className="flex h-full flex-col rounded-xl bg-surface-container-lowest p-8 shadow-architectural ring-1 ring-outline-variant/10 transition-transform duration-300 hover:-translate-y-1">

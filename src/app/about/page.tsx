@@ -4,18 +4,18 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { RevealOnScroll } from "@/components/animations/RevealOnScroll";
-import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { AboutFaqJsonLd } from "@/components/seo/AboutFaqJsonLd";
 
 export const metadata: Metadata = {
   title: "About STRUCTURA | Structural Engineering Consulting Firm",
   description:
-    "STRUCTURA is a structural engineering consulting firm serving architects, developers, and contractors in Florida and the Southeast. We provide plan review, constructability feedback, and engineering consulting with clear, written deliverables.",
+    "STRUCTURA is a structural engineering consulting practice serving architects, developers, and contractors in Florida and the Southeast. I provide plan review, constructability feedback, and engineering consulting with clear, written deliverables.",
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About STRUCTURA | Structural Engineering Consulting",
     description:
-      "Learn how STRUCTURA works with project teams: structural plan reviews, constructability input, and consulting engagements.",
+      "Learn how STRUCTURA works on your project: structural plan reviews, constructability input, and consulting engagements.",
     url: "/about",
   },
 };
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
 const aboutFaqs = [
   {
     q: "What is STRUCTURA?",
-    a: "STRUCTURA is a structural engineering consulting firm that provides plan review, constructability feedback, and engineering consulting for architects, developers, and contractors in Florida and the Southeast United States.",
+    a: "STRUCTURA is a structural engineering consulting practice that provides plan review, constructability feedback, and engineering consulting for architects, developers, and contractors in Florida and the Southeast United States.",
   },
   {
     q: "Who does STRUCTURA work with?",
-    a: "STRUCTURA works with architects, developers, general contractors, and construction managers on commercial and multifamily projects. We collaborate alongside your engineer of record, not as a replacement.",
+    a: "STRUCTURA works with architects, developers, general contractors, and construction managers on commercial and multifamily projects. I collaborate alongside your engineer of record, not as a replacement.",
   },
   {
     q: "Where does STRUCTURA operate?",
@@ -39,7 +39,7 @@ const aboutFaqs = [
   },
   {
     q: "Does STRUCTURA produce sealed drawings?",
-    a: "No. STRUCTURA provides written recommendations, review comments, and options analysis, not sealed construction documents. If your project requires stamped drawings, we can discuss scope or refer you to a full-service structural engineering firm.",
+    a: "No. STRUCTURA provides written recommendations, review comments, and options analysis, not sealed construction documents. If your project requires stamped drawings, I can discuss scope or refer you to a full-service structural engineering firm.",
   },
 ];
 
@@ -47,22 +47,22 @@ export default function AboutPage() {
   return (
     <main>
       <AboutFaqJsonLd />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", href: "/" },
+          { name: "About", href: "/about" },
+        ]}
+      />
       <PageHeader
+        variant="about"
         title="About STRUCTURA: structural engineering consulting"
-        description="STRUCTURA is a structural engineering consulting firm for architects, developers, and contractors in Florida and the Southeast. We provide plan review, constructability feedback, and targeted engineering consulting with clear, written deliverables."
+        description="STRUCTURA is a structural engineering consulting practice for architects, developers, and contractors in Florida and the Southeast. I provide plan review, constructability feedback, and targeted engineering consulting with clear, written deliverables."
       />
 
       <section className="bg-surface py-16 md:py-20">
         <Container>
-          <Breadcrumbs
-            items={[
-              { name: "Home", href: "/" },
-              { name: "About", href: "/about" },
-            ]}
-          />
-
           <RevealOnScroll>
-            <div className="mt-10 rounded-2xl bg-surface-container-low p-8 ring-1 ring-outline-variant/10 md:p-10">
+            <div className="rounded-2xl bg-surface-container-low p-8 ring-1 ring-outline-variant/10 md:p-10">
               <h2 className="font-headline text-sm font-bold uppercase tracking-widest text-secondary">
                 Key facts about STRUCTURA
               </h2>
@@ -99,7 +99,7 @@ export default function AboutPage() {
             <RevealOnScroll className="lg:col-span-7">
               <div>
                 <h2 className="font-headline text-2xl font-black tracking-tight text-primary-container md:text-3xl">
-                  How does STRUCTURA work with project teams?
+                  How does STRUCTURA work on your project?
                 </h2>
                 <p className="mt-6 text-lg leading-relaxed text-on-surface-variant">
                   STRUCTURA works alongside architects, MEP consultants, and contractors to turn structural intent into
@@ -112,10 +112,10 @@ export default function AboutPage() {
                 </p>
 
                 <h3 className="mt-10 font-headline text-xl font-bold text-primary-container">
-                  When do teams hire STRUCTURA?
+                  When should you hire STRUCTURA?
                 </h3>
                 <p className="mt-4 text-lg leading-relaxed text-on-surface-variant">
-                  Teams hire STRUCTURA when they need a construction engineering consultant who speaks both code and
+                  Hire STRUCTURA when you need a construction engineering consultant who speaks both code and
                   jobsite reality. Common engagement types include:
                 </p>
                 <ul className="mt-4 space-y-3 text-on-surface-variant">
@@ -198,7 +198,7 @@ export default function AboutPage() {
             <div className="mt-16 rounded-3xl bg-primary-container p-10 text-on-primary md:p-14">
               <h2 className="font-headline text-2xl font-black tracking-tight md:text-3xl">Ready to discuss your project?</h2>
               <p className="mt-4 max-w-2xl text-primary-fixed-dim">
-                Send project type, location, timeline, and what you need reviewed. We will reply with next steps and a
+                Send project type, location, timeline, and what you need reviewed. I will reply with next steps and a
                 suggested scope.
               </p>
               <div className="mt-8">

@@ -13,7 +13,7 @@ const homeFaqs = [
       "Structural plan review is an independent check of structural drawings and details before permit submission. It verifies load paths, code compliance, coordination with architecture and MEP, and constructability, so problems surface while changes are still inexpensive.",
   },
   {
-    question: "Does STRUCTURA work with teams in Florida and the Southeast?",
+    question: "Does STRUCTURA serve clients in Florida and the Southeast?",
     answer:
       "Yes. STRUCTURA regularly supports architects, developers, and contractors on projects in Florida and the broader Southeast United States, with deliverables aligned to local building code intent and jurisdictional expectations.",
   },

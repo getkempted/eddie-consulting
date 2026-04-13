@@ -13,7 +13,7 @@ export const seoDefaults = {
     "structural engineering services",
   ] as const,
   secondaryKeywords: [
-    "engineering consulting firm",
+    "engineering consulting practice",
     "construction engineering consultant",
     "peer review structural drawings",
     "building code structural review",

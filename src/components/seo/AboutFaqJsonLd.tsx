@@ -5,12 +5,12 @@ const aboutFaqs = [
   {
     question: "What is STRUCTURA?",
     answer:
-      "STRUCTURA is a structural engineering consulting firm that provides plan review, constructability feedback, and engineering consulting for architects, developers, and contractors in Florida and the Southeast United States.",
+      "STRUCTURA is a structural engineering consulting practice that provides plan review, constructability feedback, and engineering consulting for architects, developers, and contractors in Florida and the Southeast United States.",
   },
   {
     question: "Who does STRUCTURA work with?",
     answer:
-      "STRUCTURA works with architects, developers, general contractors, and construction managers on commercial and multifamily projects. We collaborate alongside your engineer of record, not as a replacement.",
+      "STRUCTURA works with architects, developers, general contractors, and construction managers on commercial and multifamily projects. I collaborate alongside your engineer of record, not as a replacement.",
   },
   {
     question: "Where does STRUCTURA operate?",
@@ -25,7 +25,7 @@ const aboutFaqs = [
   {
     question: "Does STRUCTURA produce sealed drawings?",
     answer:
-      "No. STRUCTURA provides written recommendations, review comments, and options analysis, not sealed construction documents. If your project requires stamped drawings, we can discuss scope or refer you to a full-service structural engineering firm.",
+      "No. STRUCTURA provides written recommendations, review comments, and options analysis, not sealed construction documents. If your project requires stamped drawings, I can discuss scope or refer you to a full-service structural engineering firm.",
   },
 ];
 

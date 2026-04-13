@@ -78,7 +78,7 @@ export function ArticleLayout({
                     Need structural engineering support?
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-on-surface-variant">
-                    Share your project details and we will follow up with a scope and next steps.
+                    Share your project details and STRUCTURA will follow up with a scope and next steps.
                   </p>
                   <div className="mt-6">
                     <Button href="/contact" variant="primary" size="sm" className="w-full justify-center">

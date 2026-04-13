@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "STRUCTURA | Structural Engineering Consulting, Plan Review & Constructability (Florida & Southeast)",
   },
   description:
-    "STRUCTURA is a structural engineering consulting firm in Florida and the Southeast. Services include structural plan review, constructability feedback, and engineering consulting for architects, developers, and contractors.",
+    "STRUCTURA is a structural engineering consulting practice in Florida and the Southeast. Services include structural plan review, constructability feedback, and engineering consulting for architects, developers, and contractors.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "STRUCTURA | Structural Engineering Consulting & Plan Review",
@@ -38,7 +38,7 @@ function HomeFaq() {
       a: "Structural plan review is an independent check of structural drawings and details before permit submission. It verifies load paths, code compliance, coordination with architecture and MEP, and constructability, so problems surface while changes are still inexpensive.",
     },
     {
-      q: "Does STRUCTURA work with teams in Florida and the Southeast?",
+      q: "Does STRUCTURA serve clients in Florida and the Southeast?",
       a: "Yes. STRUCTURA regularly supports architects, developers, and contractors on projects in Florida and the broader Southeast United States, with deliverables aligned to local building code intent and jurisdictional expectations.",
     },
     {
@@ -105,7 +105,7 @@ function FeaturedInsights() {
               </h2>
               <p className="mt-3 text-lg text-on-surface-variant">
                 Practical guidance on plan review, constructability, and Florida building code, written for
-                the teams that design and build.
+                the architects, developers, and contractors who design and build.
               </p>
             </div>
             <Link

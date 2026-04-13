@@ -25,7 +25,7 @@ export function CtaBand() {
                   </Link>{" "}
                   or{" "}
                   <Link href="/about" className="font-bold text-primary-container underline-offset-4 hover:underline">
-                    how we work
+                    how I work
                   </Link>
                   .
                 </p>

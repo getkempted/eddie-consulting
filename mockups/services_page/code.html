@@ -91,6 +91,23 @@
         .architectural-shadow {
             box-shadow: 0 32px 64px -12px rgba(25, 28, 30, 0.06);
         }
+        /* Services hero — "The Structural Macro": close-up steel detail, navy duotone */
+        .hero-services-image {
+            background-color: #0d1c32; /* fallback */
+            /* SWAP: pick a steel-beam / connection macro from https://unsplash.com/s/photos/steel-beams */
+            background-image:
+                linear-gradient(135deg, rgba(13,28,50,0.55) 0%, rgba(80,95,118,0.35) 100%),
+                url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=80');
+            background-size: cover;
+            background-position: center;
+            filter: contrast(1.05) saturate(0.6);
+        }
+        /* Subtle tonal band behind the hero so text side feels "lifted" off the section */
+        .hero-services-bg {
+            background:
+                radial-gradient(1200px 600px at 85% 50%, rgba(13,28,50,0.05), transparent 60%),
+                linear-gradient(180deg, #f7f9fb 0%, #f2f4f6 100%);
+        }
     </style>
 </head>
 <body class="bg-surface font-body text-on-surface antialiased">
@@ -112,7 +129,7 @@
 </nav>
 <main class="pt-24">
 <!-- Hero Section -->
-<header class="relative overflow-hidden py-24 px-8 bg-surface">
+<header class="hero-services-bg relative overflow-hidden py-24 px-8">
 <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
 <div class="flex-1 space-y-6">
 <span class="inline-block text-on-surface-variant tracking-[0.2em] font-label font-bold text-xs uppercase">Precision Engineering</span>
@@ -123,9 +140,11 @@
                         We translate complex architectural visions into structurally sound realities through rigorous analysis and technical mastery.
                     </p>
 </div>
-<div class="flex-1 relative w-full aspect-square md:aspect-auto md:h-[500px] rounded-xl overflow-hidden architectural-shadow">
-<img alt="Structural Engineering Blueprint" class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700" data-alt="Close up high angle view of detailed architectural structural blueprints on a desk with drafting tools in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZVwAmBVQJiIpdK08VhuLseWlcPo1gliObxIq8t6UR_hgEEAabHxetKnkKOT_HdlmQLNPpfpoHhtuF-CFGtVbaot6_Kp85Z-4ib6FXA17_XZtGuYndYqqbKl894GKtqFbiez_Ui3kJsQ_otPsRCKrnt_WTU87Q63Avdtoe04oY6pqNYHVYEnEWW379pKAllWVhR2KcDMGXBF6jzaBzC8GN8-dIS7o86MOZuD0RPsWk7n8l492TIccC7PRqN1A4vtneozyZCWr8POpX"/>
-<div class="absolute inset-0 blueprint-gradient opacity-20 mix-blend-multiply"></div>
+<div class="hero-services-image flex-1 relative w-full aspect-square md:aspect-auto md:h-[500px] rounded-xl overflow-hidden architectural-shadow">
+<!-- Blueprint Overlay chip — "technical specification" accent from design system -->
+<div class="absolute top-8 left-8 bg-secondary-container/80 backdrop-blur-md px-4 py-2 rounded-md">
+<span class="text-xs font-label font-bold uppercase tracking-widest text-on-secondary-container">Load-bearing detail · W14×90</span>
+</div>
 </div>
 </div>
 </header>

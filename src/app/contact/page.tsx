@@ -4,13 +4,13 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { Container } from "@/components/ui/Container";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { RevealOnScroll } from "@/components/animations/RevealOnScroll";
-import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { BreadcrumbJsonLd } from "@/components/seo/BreadcrumbJsonLd";
 import { ContactFaqJsonLd } from "@/components/seo/ContactFaqJsonLd";
 
 export const metadata: Metadata = {
   title: "Contact STRUCTURA | Request a Structural Engineering Consultation",
   description:
-    "Request a structural engineering consultation from STRUCTURA. Share your project location, building type, milestones, and drawings. We respond with scope, timing, and next steps for Florida and Southeast projects.",
+    "Request a structural engineering consultation from STRUCTURA. Share your project location, building type, milestones, and drawings. STRUCTURA responds with scope, timing, and next steps for Florida and Southeast projects.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact STRUCTURA | Request a Consultation",
@@ -43,20 +43,21 @@ export default function ContactPage() {
   return (
     <main>
       <ContactFaqJsonLd />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Contact", href: "/contact" },
+        ]}
+      />
       <PageHeader
+        variant="contact"
         title="Request a structural engineering consultation"
-        description="Tell us about your project, what you need reviewed, and when you need comments. STRUCTURA will respond with a scope, timeline, and next steps."
+        description="Tell me about your project, what you need reviewed, and when you need comments. STRUCTURA will respond with a scope, timeline, and next steps."
       />
 
       <section className="bg-surface py-16 md:py-20">
         <Container>
-          <Breadcrumbs
-            items={[
-              { name: "Home", href: "/" },
-              { name: "Contact", href: "/contact" },
-            ]}
-          />
-          <div className="mt-10 grid gap-12 lg:grid-cols-12 lg:gap-14">
+          <div className="grid gap-12 lg:grid-cols-12 lg:gap-14">
             <RevealOnScroll className="lg:col-span-5">
               <div>
                 <h2 className="font-headline text-2xl font-black tracking-tight text-primary-container md:text-3xl">
@@ -121,7 +122,7 @@ export default function ContactPage() {
                       href="/about"
                       className="text-primary-container underline-offset-4 hover:underline"
                     >
-                      Learn how STRUCTURA works with teams
+                      Learn how STRUCTURA works on your project
                     </Link>
                   </p>
                 </div>

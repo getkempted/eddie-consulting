@@ -23,7 +23,7 @@ function PlanReviewMistakes() {
         weeks to the schedule.
       </p>
       <p>
-        The mistakes below are the ones we see most often across commercial and multifamily projects in
+        The mistakes below are the ones I see most often across commercial and multifamily projects in
         Florida and the Southeast. Fixing them before submission is the fastest way to reduce review cycles
         and get to permit.
       </p>
@@ -105,7 +105,7 @@ function PlanReviewMistakes() {
         set of experienced eyes catches the errors that the design team has become too close to see.
       </p>
       <p>
-        At STRUCTURA, we review drawings the way building departments and contractors do, checking load
+        At STRUCTURA, I review drawings the way building departments and contractors do, checking load
         paths, code compliance, coordination, and constructability. The result is a cleaner submission and
         fewer revision cycles.
       </p>
@@ -264,9 +264,9 @@ function WhenToHireConsultant() {
         more specific the scope, the tighter the deliverable and the faster the turnaround.
       </p>
       <p>
-        At STRUCTURA, we scope every engagement to the decisions that matter for your project and
+        At STRUCTURA, I scope every engagement to the decisions that matter for your project and
         timeline. <Link href="/contact">Request a consultation</Link> with your project details
-        and we will propose a scope that fits.
+        and I will propose a scope that fits.
       </p>
     </>
   );
@@ -453,11 +453,11 @@ function FloridaWindLoad() {
         <li>Ignoring topographic effects for elevated sites</li>
       </ol>
 
-      <h2>How we help</h2>
+      <h2>How STRUCTURA can help</h2>
       <p>
         STRUCTURA&apos;s <Link href="/services#plan-review">structural plan review</Link> and{" "}
         <Link href="/services#consulting">consulting services</Link> include verification of
-        wind load calculations and documentation. We check that the design aligns with FBC requirements,
+        wind load calculations and documentation. I check that the design aligns with FBC requirements,
         the correct ASCE 7 provisions, and the specific expectations of the reviewing jurisdiction.
       </p>
       <p>
@@ -554,8 +554,8 @@ function ArchitectCoordination() {
         architect and structural engineering firms.
       </p>
       <p>
-        At STRUCTURA, coordination support is part of our{" "}
-        <Link href="/services#plan-review">consulting and plan review services</Link>. We work
+        At STRUCTURA, coordination support is part of my{" "}
+        <Link href="/services#plan-review">consulting and plan review services</Link>. I work
         alongside your design team to keep the structural and architectural design aligned.
       </p>
       <p>

@@ -20,7 +20,7 @@ export const servicesFaq: readonly FaqItem[] = [
     cluster: "plan-review",
     question: "What do you look for during a structural plan review?",
     answer:
-      "We check gravity and lateral load path continuity, connection details for constructability, coordination conflicts with architectural and MEP trades, code compliance for the jurisdiction, and anything that could trigger field rework or change orders downstream.",
+      "I check gravity and lateral load path continuity, connection details for constructability, coordination conflicts with architectural and MEP trades, code compliance for the jurisdiction, and anything that could trigger field rework or change orders downstream.",
   },
   {
     cluster: "plan-review",
@@ -66,13 +66,13 @@ export const servicesFaq: readonly FaqItem[] = [
     cluster: "consulting",
     question: "How is structural consulting different from full structural design?",
     answer:
-      "Consulting focuses on targeted reviews, options, and written guidance, often alongside your engineer of record, while full design typically includes complete calculation packages and sealed drawings for permit. We scope engagements to the decisions you need, not duplicate EOR work.",
+      "Consulting focuses on targeted reviews, options, and written guidance, often alongside your engineer of record, while full design typically includes complete calculation packages and sealed drawings for permit. I scope engagements to the decisions you need, not duplicate EOR work.",
   },
   {
     cluster: "consulting",
     question: "Can you work alongside our existing engineer of record?",
     answer:
-      "Yes. That is a common arrangement. We provide targeted review, second opinions, or constructability input while your EOR retains design responsibility. We coordinate through your established communication channels and respect the EOR relationship.",
+      "Yes. That is a common arrangement. I provide targeted review, second opinions, or constructability input while your EOR retains design responsibility. I coordinate through your established communication channels and respect the EOR relationship.",
   },
   {
     cluster: "consulting",
@@ -84,7 +84,7 @@ export const servicesFaq: readonly FaqItem[] = [
     cluster: "consulting",
     question: "Do you provide sealed drawings or stamped calculations?",
     answer:
-      "Our consulting engagements produce written recommendations, review comments, and options analysis, not sealed documents. If your project requires sealed structural drawings, we can discuss scope or refer you to a full-service structural engineering firm.",
+      "My consulting engagements produce written recommendations, review comments, and options analysis, not sealed documents. If your project requires sealed structural drawings, I can discuss scope or refer you to a full-service structural engineering firm.",
   },
 
   // ── Process and Pricing Cluster ──────────────────────────────────
@@ -92,19 +92,19 @@ export const servicesFaq: readonly FaqItem[] = [
     cluster: "process",
     question: "How quickly can we get comments back?",
     answer:
-      "Turnaround depends on package size and scope, but many first passes fall in a multi-day window once scope is agreed. We align deliverables to your submission or procurement dates up front.",
+      "Turnaround depends on package size and scope, but many first passes fall in a multi-day window once scope is agreed. I align deliverables to your submission or procurement dates up front.",
   },
   {
     cluster: "process",
     question: "How much does structural engineering consulting cost?",
     answer:
-      "Fees vary by scope, package size, and turnaround needs. Plan reviews for a straightforward commercial project typically start in the low thousands. We scope every engagement clearly up front so there are no surprises. Send your project details for a specific proposal.",
+      "Fees vary by scope, package size, and turnaround needs. Plan reviews for a straightforward commercial project typically start in the low thousands. I scope every engagement clearly up front so there are no surprises. Send your project details for a specific proposal.",
   },
   {
     cluster: "process",
     question: "What does your engagement process look like from start to finish?",
     answer:
-      "We start with a brief consultation to define scope, schedule, and deliverables. Then we perform a focused review pass on structure, code intent, and coordination. You receive prioritized, written comments your team can fold into the next drawing issue. Follow-ups are available as the design evolves.",
+      "I start with a brief consultation to define scope, schedule, and deliverables. Then I perform a focused review pass on structure, code intent, and coordination. You receive prioritized, written comments your team can fold into the next drawing issue. Follow-ups are available as the design evolves.",
   },
   {
     cluster: "process",
@@ -116,27 +116,27 @@ export const servicesFaq: readonly FaqItem[] = [
   // ── Local / Florida Cluster ──────────────────────────────────────
   {
     cluster: "local",
-    question: "Do you work with teams in Florida and across the Southeast?",
+    question: "Do you work with clients in Florida and across the Southeast?",
     answer:
-      "Yes. We regularly support architects, developers, and contractors on projects in Florida and the broader Southeast, with deliverables aligned to local building code intent and typical jurisdictional expectations.",
+      "Yes. I regularly support architects, developers, and contractors on projects in Florida and the broader Southeast, with deliverables aligned to local building code intent and typical jurisdictional expectations.",
   },
   {
     cluster: "local",
     question: "Are you familiar with Florida Building Code requirements for structural design?",
     answer:
-      "Absolutely. We work within FBC requirements daily, including wind load provisions, High Velocity Hurricane Zone (HVHZ) requirements for Miami-Dade and Broward counties, hurricane protection standards, and the specific documentation expectations of Florida building departments.",
+      "Absolutely. I work within FBC requirements daily, including wind load provisions, High Velocity Hurricane Zone (HVHZ) requirements for Miami-Dade and Broward counties, hurricane protection standards, and the specific documentation expectations of Florida building departments.",
   },
   {
     cluster: "local",
     question: "Do you handle projects in Miami-Dade's High Velocity Hurricane Zone?",
     answer:
-      "Yes. HVHZ projects have additional structural requirements for wind resistance, impact protection, and documentation that go beyond standard FBC. We are experienced with the specific requirements and review expectations for Miami-Dade and Broward County projects.",
+      "Yes. HVHZ projects have additional structural requirements for wind resistance, impact protection, and documentation that go beyond standard FBC. I am experienced with the specific requirements and review expectations for Miami-Dade and Broward County projects.",
   },
   {
     cluster: "local",
     question: "Can you help with Florida's milestone inspection and recertification requirements?",
     answer:
-      "Yes. Following SB 4-D, condominiums and cooperative buildings 30 years old (25 years in coastal areas) require milestone structural inspections. We can support teams preparing for or responding to these inspection requirements with targeted structural assessment and guidance.",
+      "Yes. Following SB 4-D, condominiums and cooperative buildings 30 years old (25 years in coastal areas) require milestone structural inspections. I can support clients preparing for or responding to these inspection requirements with targeted structural assessment and guidance.",
   },
 
   // ── General / Decision-Support Cluster ───────────────────────────
