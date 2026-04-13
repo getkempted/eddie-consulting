@@ -20,6 +20,28 @@ export function ContactForm() {
 
   return (
     <form action={formAction} className="space-y-8" noValidate>
+      {/* Honeypot: visually hidden, not a real field. Bots that auto-fill will trip this. */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          left: "-9999px",
+          width: "1px",
+          height: "1px",
+          overflow: "hidden",
+        }}
+      >
+        <label htmlFor="website">Website (leave this field empty)</label>
+        <input
+          id="website"
+          name="website"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          defaultValue=""
+        />
+      </div>
+
       <div className="grid gap-8 md:grid-cols-2">
         <div>
           <label htmlFor="name" className="font-headline text-xs font-bold uppercase tracking-widest text-on-surface-variant">

@@ -1,5 +1,6 @@
 "use server";
 
+import { headers } from "next/headers";
 import { createServiceRoleClient } from "@/lib/supabase/server";
 
 export type LeadFormState = {
@@ -12,10 +13,59 @@ function isValidEmail(value: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
+// In-memory rate limiter: max RATE_LIMIT_MAX submissions per RATE_LIMIT_WINDOW_MS
+// per IP. Persists for the lifetime of the serverless instance; cold starts reset it.
+// Good enough to deter casual abuse without external infrastructure.
+const RATE_LIMIT_MAX = 3;
+const RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000;
+const submissionLog = new Map<string, number[]>();
+
+function getClientIp(headerList: Headers): string {
+  const forwarded = headerList.get("x-forwarded-for");
+  if (forwarded) return forwarded.split(",")[0]!.trim();
+  return headerList.get("x-real-ip") ?? "unknown";
+}
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const cutoff = now - RATE_LIMIT_WINDOW_MS;
+  const recent = (submissionLog.get(ip) ?? []).filter((ts) => ts > cutoff);
+
+  if (recent.length >= RATE_LIMIT_MAX) {
+    submissionLog.set(ip, recent);
+    return true;
+  }
+
+  recent.push(now);
+  submissionLog.set(ip, recent);
+  return false;
+}
+
+const FAKE_SUCCESS_MESSAGE =
+  "Thanks. We received your consultation request and will follow up shortly.";
+
 export async function submitLead(
   _prevState: LeadFormState,
   formData: FormData,
 ): Promise<LeadFormState> {
+  // Honeypot: a hidden `website` field no human will fill. If populated, pretend
+  // the submission succeeded so bots don't learn they were blocked.
+  const honeypot = String(formData.get("website") ?? "").trim();
+  if (honeypot) {
+    return { ok: true, message: FAKE_SUCCESS_MESSAGE };
+  }
+
+  // Rate limit per IP
+  const headerList = await headers();
+  const ip = getClientIp(headerList);
+  if (isRateLimited(ip)) {
+    return {
+      ok: false,
+      message:
+        "Too many submissions from this network. Please wait a few minutes before trying again.",
+    };
+  }
+
   const name = String(formData.get("name") ?? "").trim();
   const email = String(formData.get("email") ?? "").trim();
   const company = String(formData.get("company") ?? "").trim();
@@ -57,5 +107,5 @@ export async function submitLead(
     };
   }
 
-  return { ok: true, message: "Thanks. We received your consultation request and will follow up shortly." };
+  return { ok: true, message: FAKE_SUCCESS_MESSAGE };
 }
